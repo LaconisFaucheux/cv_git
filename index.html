@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link id="css" href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -31,10 +31,21 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Compétences</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Soft Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#loisirs">Loisirs</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="dl/CV.pdf" download="CV.pdf">Téléchager en PDF</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="dl/CV.pdf" download="CV.pdf">Télécharger en PDF</a></li>
+                    <li class="nav-item">
+                        <div class="colorSquares">                
+                            <button type="button" id="styles" class="colorSquare border border-dark border-2 rounded-circle classic active"></button>
+                            <button type="button" id="green" class="colorSquare border border-dark border-2 rounded-circle green"></button>
+                            <button type="button" id="blue" class="colorSquare border border-dark border-2 rounded-circle blue"></button>
+                            <button type="button" id="yellow" class="colorSquare border border-dark border-2 rounded-circle yellow"></button>
+                            <button type="button" id="darkMode" class="colorSquare border border-dark border-2 rounded-circle darkMode"></button>
+                        </div>
+                    </li>
                 </ul>
             </div>
+            
         </nav>
+       
         <!-- Page Content-->
         <div class="container-fluid p-0">
             <!-- About-->
@@ -47,7 +58,7 @@
                     </h1>
                     <h2>Développeur Web (stage)</h2>
                     <div class="subheading mb-5">
-                        3, rue du Puits · 17770 ECOYEUX · 06.09.01.37.10 ·
+                        17770 ECOYEUX · 06.09.01.37.10 ·
                         <a href="mailto:name@email.com">nicolas.frotey@gmail.com</a>
                     </div>
                     <p class="lead mb-5">En reconversion, je souhaite effectuer un stage (non rémunéré 
@@ -64,13 +75,17 @@
                     <p class="lead mb-5"> Ce site a été conçu à partir d'un template Bootstrap 5 
                         consultable <a href="https://startbootstrap.com/theme/resume" title="Adresse du template">ici</a>, 
                         modifié pour convenir à mes besoins. 
-                        D'autres améliorations seront ajoutées au fil de mon apprentissage, comme par exemple un 
-                        "dark mode toggle". </p>
+                        D'autres améliorations seront ajoutées au fil de mon apprentissage. </p>
+                    <p class="noteDeVersion"><strong>Note de version (29/08/2022):</strong> <br>Correction de fautes de frappe, ajout du choix de couleur 
+                        (multiplication de fichier CSS et écouteur d'évènements javascript).<br>
+                        Correction d'un bug qui affichait le texte du menu en noir pour tous les modes après le passage par le mode jaune.</p>
+                        </p>
+                        
                     <div class="social-icons">
                         <a class="social-icon" title="Mon Compte LinkedIn" href="https://fr.linkedin.com/in/nicolas-frotey-70683a4a/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" title="A venir..." href="#!"><i class="fab fa-github"></i></a>
                         <a class="social-icon" title="A venir..." href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon" title="A venir..." href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-icon" title="Ma Page Facebook" href="https://www.facebook.com/profile.php?id=100084734667011"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
             </section>
@@ -237,6 +252,7 @@
                                     <li>
                                         <span class="fa-li"><i class="fas fa-check"></i></span>
                                         <strong>Communication numérique</strong>
+                                    </li>
                                 </ul>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">Septembre 2012 - Juillet 2014</span></div>
@@ -293,7 +309,7 @@
                                 <div class="progress-wrap">
                                     <h3>Python <i class="fa-brands fa-python"></i></h3>
                                     <div class="progress">
-                                        <div class="progress-bar color-1" role="progressbar" aria-valuenow="10"
+                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="10"
                                         aria-valuemin="0" aria-valuemax="100" style="width:10%">
                                         <span>10%</span>
                                         </div>
@@ -304,7 +320,7 @@
                                 <div class="progress-wrap">
                                     <h3>Bootstrap <i class="fa-brands fa-bootstrap"></i></h3>
                                     <div class="progress">
-                                        <div class="progress-bar color-1" role="progressbar" aria-valuenow="50"
+                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="50"
                                         aria-valuemin="0" aria-valuemax="100" style="width:50%">
                                         <span>50%</span>
                                         </div>
@@ -315,7 +331,7 @@
                                 <div class="progress-wrap">
                                     <h3>Anglais<i class="fa-solid fa-flag-usa"></i></h3>
                                     <div class="progress">
-                                        <div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
+                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90"
                                         aria-valuemin="0" aria-valuemax="100" style="width:90%">
                                         <span>90%</span>
                                         </div>
@@ -380,7 +396,7 @@
                             <i class="fa-solid fa-book-open"></i>
                             Littérature 
                             <dd>La SF et la fantasy sont mes styles de littératures favoris, avec des 
-                                idoles aux noms légendaires comme Isaac Asmiov, Frank Herbert ou JRR Tolkien. 
+                                idoles aux noms légendaires comme Isaac Asimov, Frank Herbert ou JRR Tolkien. 
                                 Quelle évasion ! J'apprécie également les romans historiques comme ceux de 
                                 Max Gallo, ou plus particulièrement ceux de Christian Jacq, traitant d'une de 
                                 mes périodes favorites de l'histoire, l'Antiquité Egyptienne.
@@ -421,5 +437,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!--script changement de couleurs-->
+        <script src="js/colorMods.js"></script>
     </body>
 </html>
