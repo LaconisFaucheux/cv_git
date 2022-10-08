@@ -1,3 +1,8 @@
+<?php
+declare(strict_types=1);
+session_start();
+$_SESSION['answer'] = rand(0, 1000);
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -66,7 +71,8 @@
                         mettre en application mes connaissances théoriques, apprendre sur le terrain et 
                         gagner  en expérience. Mes compétences, pour l'heure encore restreintes, évolueront 
                         au fil de mes cours, et me permettront de devenir un réel atout, éventuellement 
-                        sur un plus long terme qu'un simple stage. <br>
+                        sur un plus long terme qu'un simple stage. D'autres réalisations seront visibles sur mon Github ou sur
+                        <a href="realisations/jeu.php">cette page</a>. <br>
                         
                         J’ai également pour projet de suivre une formation en alternance sur un an (en Java, PHP ou C# par exemple) 
                         suite à l’obtention de mon Graduate Développeur web full stack et mobile chez Studi.</p>
