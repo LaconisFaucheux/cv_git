@@ -1,6 +1,10 @@
 <?php
 declare(strict_types=1);
 session_start();
+if (! isset($_POST['chiffre'])){
+    $_SESSION['answer'] = rand(0, 1000);
+    $_SESSION['counter'] = 0;
+}
 $message = null;
 $answerArray = [];
 $playAgain = null;
@@ -9,12 +13,15 @@ $thxmsg = null;
 if (isset($_POST['chiffre'])) {
     if ($_POST['chiffre'] > $_SESSION['answer']) {
         $message = "<div class=\"alert alert-danger my-3\">Trop grand!</div>";
+        $_SESSION['counter'] += 1;
 
     } elseif ($_POST['chiffre'] < $_SESSION['answer']) {
         $message = "<div class=\"alert alert-danger my-3\">Trop petit!</div>";
+        $_SESSION['counter'] += 1;
 
     } else {
-        $message = "<div class=\"alert alert-success my-3\">Bravo, vous avez deviné le nombre " . $_SESSION['answer'] . "!</div>";
+        $_SESSION['counter'] += 1;
+        $message = "<div class=\"alert alert-success my-3\">Bravo, vous avez deviné le nombre " . $_SESSION['answer'] . " en " . $_SESSION['counter'] . " coups!</div>";
         $playAgain = "<form class=\"pt-5 text-center\" action=\"/realisations/jeu.php\" method=\"POST\">
             <div class=\"form-group my-3\"> 
                 <label for=\"game-input\" class=\"form-label\">Souhaitez-vous rejouer?</label></br>               
@@ -29,9 +36,11 @@ if (isset($_POST['chiffre'])) {
 if (isset($_POST['playAgain'])){
     if ($_POST['playAgain'] === 'yes'){
         $_SESSION['answer'] = rand(0, 1000);
+        $_SESSION['counter'] = 0;
         $message = "<div class=\"alert alert-success my-3\">C'est reparti!</div>";
     } else {
         $_SESSION['answer'] = rand(0, 1000);
+        $_SESSION['counter'] = 0;
         $message = "<div class=\"alert alert-success my-3\">Merci d'avoir joué! :)</div>";
     }
 }
@@ -53,6 +62,7 @@ if (isset($_POST['playAgain'])){
 
     </form>
     <?= $playAgain; ?>
+
 
 </div>
 

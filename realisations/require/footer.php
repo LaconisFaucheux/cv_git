@@ -19,6 +19,6 @@ require_once('functions.php');
     </div>
     <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
       <p>© 2022 
-        <a class="text-white" href="../index.php">Retour au CV</a>
+        <a class="text-white" href="../index.html">Retour au CV</a>
       </p>
 </footer>
