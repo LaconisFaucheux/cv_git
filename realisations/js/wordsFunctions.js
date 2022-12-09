@@ -65,7 +65,6 @@ function giveVowel () {
                 buttonDisabler()
                 timerID = setInterval(timerChrono, 1000)
                 alphabetReduce()
-                setTimeout(axiosRequest, time * 1000)
             }
     }
     displayLetter();
@@ -79,7 +78,6 @@ function giveConsonant () {
                 buttonDisabler()
                 timerID = setInterval(timerChrono, 1000)
                 alphabetReduce()
-                setTimeout(axiosRequest, time * 1000)
             }
     }
     displayLetter()
@@ -99,7 +97,6 @@ function alphabetReduce () {
     alphabet2 = _.difference(alphabet, tirage)
     regexString = '/['+alphabet2.join('')+']/'
     draw = tirage.join('')
-    console.log(draw)
 }
 
 vowel.addEventListener('click', giveVowel);
@@ -147,7 +144,9 @@ let input = document.getElementById('gameInput')
 let answer
 
 function timerEnd() {
+    axiosRequest()
     answer = input.value;
+    console.log(answer)
 }
 
 //AJAX avec Axios
@@ -170,6 +169,9 @@ function axiosRequest () {
             document.getElementById('answer3').innerHTML = answers[2].toUpperCase()
             document.getElementById('score3').innerHTML = answers[2].length + ' points'
             isValid = answers.indexOf(answer)
+            console.log(answers)
+            console.log(answer)
+            console.log(isValid)
             if (isValid !== -1) {
                 document.getElementById('userAnswer').innerHTML = answer.toUpperCase()
                 document.getElementById('userScore').innerHTML = answer.length + ' points'
