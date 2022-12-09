@@ -1,4 +1,4 @@
-//completed nav. Ready to be included. Use nav_items.php to add or delete nav items. 
+<!--completed nav. Ready to be included. Use nav_items.php to add or delete nav items.-->
 
 <nav class="navbar navbar-dark navbar-expand-lg bg-dark fs-5 fixed-top">
         <div class="container-fluid">

@@ -1,0 +1,60 @@
+html, body{
+    height: 100%;
+    background-image: url(../media/paperGAMEBOYbase2.jpg);
+    background-position: center top;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+#content {
+    flex-grow: 1;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+em {
+    font-weight: bold;
+}
+.lettersSquares{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width : 40px;
+    height: 40px;
+    border: 2px solid black;
+    text-align: center;
+    margin: 5px;
+    background-color: white;
+}
+
+.timer {
+    width : 80px;
+    height: 80px;
+}
+
+.answers {
+    display: flex;
+    align-items: center;
+}
+
+#reminder {
+    font-size: small;
+    font-style: italic;
+}
