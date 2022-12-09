@@ -145,7 +145,7 @@ let answer
 
 function timerEnd() {
     axiosRequest()
-    answer = input.value;
+    answer = input.value.toLowerCase();
     console.log(answer)
 }
 
