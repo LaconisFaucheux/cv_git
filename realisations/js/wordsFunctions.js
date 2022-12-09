@@ -160,7 +160,8 @@ function axiosRequest () {
         draw: draw
     }))
         .then(function (response) {
-            let answers = response.data;
+            let answersRaw = response.data;
+            let answers = _.uniq(answersRaw)
             document.getElementById('answerZone').removeAttribute('style')
             document.getElementById('answer1').innerHTML = answers[0].toUpperCase()
             document.getElementById('score1').innerHTML = answers[0].length + ' points'
