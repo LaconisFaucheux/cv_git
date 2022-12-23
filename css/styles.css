@@ -200,6 +200,10 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+.small-text{
+  font-size: x-small;
+  font-style: italic;
+}
 ul {
   padding-left: 2rem;
 }

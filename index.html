@@ -71,14 +71,15 @@
                         consultable <a href="https://startbootstrap.com/theme/resume" title="Adresse du template">ici</a>, 
                         modifié pour convenir à mes besoins. 
                         D'autres améliorations seront ajoutées au fil de mon apprentissage. </p>
-                    <p class="noteDeVersion"><strong>Note de version (29/08/2022):</strong> <br>Correction de fautes de frappe, ajout du choix de couleur 
-                        (multiplication de fichier CSS et écouteur d'évènements javascript).<br>
-                        Correction d'un bug qui affichait le texte du menu en noir pour tous les modes après le passage par le mode jaune.</p>
+
                     <p class="noteDeVersion"><strong>Note de version (09/10/2022):</strong> <br>Ajout de la partie
                         <a href="realisations/jeu.php">réalisations</a> dans laquelle est présenté un jeu codé en PHP.<br>
                         Ajout d'un compteur de coups, déplacement de la <code>$SESSION</code> sur la page du jeu.</p>
                     <p class="noteDeVersion"><strong>Note de version (06/11/2022):</strong> <br>Epuration du CSS, réduction de la taille de la photo, ce qui
                     permet un chargement plus rapide.</p>
+                    <p class="noteDeVersion"><strong>Note de version (23/12/2022):</strong> <br>Ajout du jeu "Le Mot le plus long" dans la partie
+                        <a href="realisations/jeu.php">réalisations</a>. Mise à jour des compétences et du message d'accueil, plus en adéquation
+                        avec l'évolution de mes projets. Suppression des "jauges" de niveau dans les compétences.</p>
 
                         
                     <div class="social-icons">
@@ -176,15 +177,15 @@
                             <ul class="fa-ul mb-0">
                                 <li class="mb-2">
                                     <span class="fa-li"><i class="fas fa-check"></i></span>
-                                    <strong>Front End</strong> Angular.
+                                    <strong>Front End</strong> Angular
                                 </li>
                                 <li class="mb-2">
                                     <span class="fa-li"><i class="fas fa-check"></i></span>
-                                    <strong>Back End</strong> C# .NET
+                                    <strong>Back End</strong> C#, .NET 6, <span title="Programmation Orientée Objet" >POO</span>, SQL
                                 </li>
                                 <li>
                                     <span class="fa-li"><i class="fas fa-check"></i></span>
-                                    <strong>Gestion de projet</strong> Jira
+                                    <strong>Gestion de projet</strong> Jira, Méthodes Agiles, Scrum
                                 </li>
                             </ul>
                         </div>
@@ -291,84 +292,49 @@
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Compétences</h2>
-                    <div class="subheading mb-3">Langues et langages</div>
-                    <!-- Barres de chargement-->
-                    <!---ligne 1-->
+                    <div class="subheading mb-3">Technologies</div>
                     <div class="mb-5">
-                        <div class="row mb-3">
-                            <div class="col-md-3">
-                                <div class="progress-wrap">
-                                    <h3>HTML5 <i class="fa-brands fa-html5"></i></h3>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="60"
-                                        aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                                        <span>60%</span>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="row mb-1">
+                            <div class="col-md-2">
+                                    <h3>HTML5</h3>
+                                    <img src="assets/img/html.png">
                             </div>
-                            <div class="col-md-3">
-                                <div class="progress-wrap">
-                                    <h3>CSS3 <i class="fa-brands fa-css3-alt"></i></h3>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="40"
-                                        aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                                        <span>40%</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="col-md-2">
+                                    <h3>CSS3</h3>
+                                    <img src="assets/img/css3.png">
                             </div>
-                            <div class="col-md-3">
-                                <div class="progress-wrap">
-                                    <h3>Javascript ES6+ <i class="fa-brands fa-js"></i></h3>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="20"
-                                        aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                                        <span>40%</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="col-md-2">
+                                    <h3>Javascript</h3>
+                                    <img src="assets/img/js.png">
+                            </div>
+                            <div class ="col-md-2">
+                                <h3>Angular</h3>
+                                <img src="assets/img/angular.png">
                             </div>
                         </div>
                         <!--ligne 2-->
                         <div class="row mb-3">
-                            <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-                                <div class="progress-wrap">
-                                    <h3>PHP <i class="fa-brands fa-php"></i></h3>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="10"
-                                        aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                                        <span>50%</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class ="col-md-2">
+                                <h3>PHP</h3>
+                                <img src="assets/img/php.png">
                             </div>
-                            <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-                                <div class="progress-wrap">
-                                    <h3>Bootstrap <i class="fa-brands fa-bootstrap"></i></h3>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="50"
-                                        aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                                        <span>50%</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class ="col-md-2">
+                                <h3>C# (.NET6)</h3>
+                                <img src="assets/img/csharp.png">
                             </div>
-                            <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-                                <div class="progress-wrap">
-                                    <h3>Anglais<i class="fa-solid fa-flag-usa"></i></h3>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90"
-                                        aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                                        <span>90%</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class ="col-md-2">
+                                <h3>Git</h3>
+                                <img src="assets/img/git.png">
+                            </div>
+                            <div class ="col-md-2">
+                                <h3>GitHub</h3>
+                                <img src="assets/img/github.png">
                             </div>
                         </div>
+                        <p class="small-text">Icons by <a target="_blank" href="https://icons8.com">Icons8</a> </p>
                     </div>
                     <!-- Fin barres de chargement-->
-                    <div class="subheading mb-3">Outils utilisés</div>
+                    <div class="subheading mb-3">Langues et Outils utilisés</div>
                         <ul class="fa-ul mb-0">
                             <li>
                                 <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -377,6 +343,10 @@
                             <li>
                                 <span class="fa-li"><i class="fas fa-check"></i></span>
                                 Visual Studio Code
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                Anglais
                             </li>
                         </ul>
                 </div>
@@ -468,3 +438,5 @@
         <script src="js/colorMods.js"></script>
     </body>
 </html>
+
+
