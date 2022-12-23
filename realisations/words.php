@@ -132,7 +132,9 @@ declare(strict_types=1);
                             <li id="score3" class="list-group-item">(score)</li>
                         </ul>
                     </ul>
+
                 </div>
+                <button type="button" class="btn btn-success" id="seeAllAnswers">Voir toutes les réponses possibles...</button>
             </div>
         </div>
     </div>
